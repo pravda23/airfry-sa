@@ -271,7 +271,7 @@ ul li {
 }
 
 .site-logo {
-  background-image: url(/images/logo-master-white.png);
+  background-image: url(images/logo-master-white.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -551,28 +551,6 @@ ul li {
 
 /* ABOUT BOTTOM */
 
-/* .about-bottom {
-  display: flex;
-}
-
-.about-bottom-text span {
-  display: flex;
-  align-items: center;
-  padding: 4vw;
-  text-align: left;
-  font-size: 1em;
-  line-height: 1.6em;
-  color: var(--color3);
-  font-weight: bold;
-}
-
-.about-bottom-image {
-  display: inline-block;
-  /* background-image: url(/images/face.png); */
-/* padding: 1vw;
-  width: 300px;
-} */
-
 .ab-container {
   display: flex;
 }
@@ -581,7 +559,6 @@ ul li {
   display: flex;
   align-items: center;
   padding-right: 2vw;
-  /* background-image: url(/images/face.png); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -673,7 +650,6 @@ ul li {
   left: 0;
   width: 50%;
   height: 100%;
-  /* background: var(--color3); */
 }
 
 .card .box .content {
