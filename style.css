@@ -264,10 +264,8 @@ ul li {
   display: flex;
   justify-content: left;
   align-items: center;
-
   background-color: var(--color3);
   flex-grow: 4;
-  /* padding-right: 4vw; */
 }
 
 .site-logo {
@@ -276,7 +274,7 @@ ul li {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 15vw;
-  height: 25vw;
+  height: 10vw;
   transform: scale(0.8);
   max-height: 7em;
 }
