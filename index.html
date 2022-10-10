@@ -18,19 +18,21 @@
     <!-- HEADER -->
     <header class="header-container">
       <div class="header">
-        <div class="logo-container">
+        <div class="titlelogo-container">
           <h1 class="site-title">
-            <a class="site-logo" alt="TeachTech logo" href="/"></a>HOUT BAY
+            <a class="site-logo" alt="Hout Bay Sound logo" href="/"></a>HOUT BAY
             SOUND
           </h1>
         </div>
-
         <!-- hamburger nav -->
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" id="toggler" />
+          
           <div class="fa-solid fa-bars">
           <div></div>
         </div>
+
+        <!-- overlay menu -->
         <div class="menu" id="menu">
           <div>
             <div>
@@ -67,7 +69,7 @@
           A neighbourhood sound equipment rental and music service exclusively
           for small to medium-sized parties and functions in Hout Bay and the
           Atlantic Seaboard. One person. Small setup. Simple!<br />
-          <a href="#about"><div class="btn-more">Find out more</div></a>
+          <a href="#about"><div class="btn-more"><b>FIND OUT MORE</b></div></a>
         </p>
       </div>
     </section>
@@ -91,13 +93,15 @@
               <div class="row">
                 <div><i class="fa-solid fa-rocket">&nbsp</i></div>
                 <div class="li-text">
-                  Deal with a single person to handle all the music and sound gear.
+                  Deal with a single person to handle all the music and sound
+                  gear.
                 </div>
               </div>
               <div class="row">
                 <div><i class="fa-solid fa-rocket">&nbsp</i></div>
                 <div class="li-text">
-                  Party music at your home or venue for up to 100 guests. Make a splash!
+                  Party music at your home or venue for up to 250 guests. Make a
+                  splash!
                 </div>
               </div>
             </div>
@@ -132,7 +136,8 @@
               <h3>PRIVATE PARTY</h3>
 
               <p>
-                Perfect music for birthdays, special events and cocktail parties.
+                Perfect music for birthdays, special events and cocktail
+                parties.
               </p>
               <br /><a href="#contact">from R1500</a>
             </div>
@@ -145,8 +150,8 @@
               <h3>FUNCTION / OFFICE PARTY</h3>
 
               <p>
-                Get wireless mics for speeches and a DJ to break the ice
-                at formal and special events.
+                Get wireless mics for speeches and a DJ to break the ice at
+                formal and special events.
               </p>
               <br /><a href="#contact">from R3000</a>
             </div>
@@ -157,26 +162,23 @@
 
     <!-- ABOUT BOTTOM -->
     <section id="about">
-        <h1 class="section-header">ABOUT</h1>
-            <div class="ab-container">
-                <div class="ab-image">
-                    <img src="images/face.png" style="width:100%">
-                </div>
-                <div class="ab-text">
-                    Hout Bay Sound is an agile music and events service based in Hout Bay
-                        and run by music performer John Bartmann since 2009. John has been the
-                        resident events organizer for Tsogo Sun Waterfront Hotel, and has
-                        professionally performed at The J&B Met, the Vodacom VJoy Awards and
-                        over 100 weddings! John is a vegeterian and neither drinks nor smokes
-                        (important around kids). Hout Bay Sound guarantees friendly, clean and
-                        affordable sound and music.
-                </div>
+      <h1 class="section-header">ABOUT</h1>
+      <div class="ab-container">
+        <div class="ab-image">
+          <img src="images/face.png" style="width: 100%; border-radius: 10%; padding-left: 1vw" />
+        </div>
+        <div class="ab-text">
+          <br>Hout Bay Sound is an agile music and events service based in Hout Bay
+          and run by music performer John Bartmann since 2009. John has been the
+          resident events organizer for Tsogo Sun Waterfront Hotel, and has
+          professionally performed at The J&B Met, the Vodacom VJoy Awards and
+          over 100 weddings! John is a vegeterian and neither drinks nor smokes
+          (important around kids). Hout Bay Sound guarantees friendly, clean and
+          affordable sound and music.
+        </div>
+      </div>
 
-            </div>
-
-
-
-        <div class="about-speakers">
+      <div class="about-speakers">
         <img style="width: 50%" src="images/speakers.jpg" />
       </div>
     </section>
@@ -207,22 +209,13 @@
 
     <!-- FOOTER -->
     <section>
-      <div class="footer">© lightshadedesign 2022</div>
+      <span class="footer"><a href="https://johnbartmann.com" target="_blank">site by John Bartmann</a></span>
     </section>
 
     <script>
       window.onload = () => {
         // Add a listener for any clicks on the menu
         document.getElementById("menu").addEventListener("click", function () {
-          // var targetName = event.target.tagName;
-
-          // // Make sure that the element being clicked is a link or an icon
-          // console.log(targetName);
-
-          // if (targetName !== 'A ' && targetName !== 'DIV ') {
-          //     return;
-          // }
-          // Uncheck the checkbox
           document.getElementById("toggler").checked = false;
         });
       };
