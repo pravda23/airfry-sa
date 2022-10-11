@@ -4,13 +4,12 @@
 
 :root {
   --white: #ffffff;
-  --color1: hsl(230, 50%, 81%);
-  --color2: #f18357;
-  --color3: hsl(22, 66%, 37%);
+  --color3: hsl(300, 29%, 61%);
+  --color2: hsl(300, 22%, 34%);
   --shade1: hsl(0, 0%, 90%);
   --shade2: hsl(0, 0%, 50%);
   --shade3: hsl(0, 0%, 10%);
-  --shade3-trans: hsl(0, 0%, 10%, 60%);
+  --shade3-trans: hsl(289, 12%, 26%, 60%);
   --menu-speed: 0.5s;
 }
 
@@ -230,6 +229,10 @@ ul li {
   align-items: center;
   font-size: clamp(3vw, 5vw, 6vw);
   width: 65vw;
+}
+
+.site-title > a {
+  color: var(--white);
 }
 
 /* FULL WIDTH NAV */
@@ -581,20 +584,20 @@ ul li {
   justify-content: center;
   text-align: center;
   height: 8vh;
-  background-color: var(--shade3);
-  padding: 2vh;
+  background-color: var(--color3);
+  padding: 3vh;
   overflow: hidden;
   text-decoration: none;
 }
 
 .footer > a {
-  color: white;
+  color: var(--white);
 }
 
 /* CONTACT */
 
 .contact-container-main {
-  padding: 0.5em;
+  padding: 0 0.5em 0.5em 0.5em;
   color: var(--shade3);
   font-size: 1.5em;
   font-weight: bold;
@@ -604,18 +607,9 @@ ul li {
   text-align: right;
 }
 
-.contact-container-wa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #10b418;
-  padding: 15px;
-  padding-bottom: -5px;
-}
-
 .fa-phone {
-  font-size: 3em;
+  font-size: 2em;
+  color: var(--color2);
 }
 
 .contact-item-map {
@@ -715,9 +709,6 @@ ul li {
     justify-content: flex-end;
   }
 
-  .quote {
-    padding: 20px 50px 20px 50px;
-  }
   .contact-container-main {
     flex-direction: column;
     align-items: center;
@@ -734,8 +725,9 @@ ul li {
   }
 
   .site-title {
-    font-size: 1em;
+    font-size: clamp(1vw, 1.2em, 1.5em);
     width: 45vw;
+    height: 15vh;
   }
 
   .menu-wrap {
@@ -814,7 +806,13 @@ ul li {
   #about:before {
     display: block;
     content: "";
-    height: 130px;
-    margin: -130px 0 0;
+    height: 150px;
+    margin: -150px 0 0;
+  }
+  #product-options:before {
+    display: block;
+    content: "";
+    height: 150px;
+    margin: -150px 0 0;
   }
 }
