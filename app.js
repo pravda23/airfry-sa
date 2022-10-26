@@ -18,7 +18,6 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  console.log(slideIndex);
   showSlides((slideIndex += n));
 }
 
@@ -30,8 +29,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
+
   let slides = document.getElementsByClassName("g1-slides");
-  console.log(slides[0]);
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {
