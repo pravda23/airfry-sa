@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 
 :root {
   --white: hsl(0, 0%, 90%);
   --black: hsl(0, 0%, 10%);
   --color1-primary: #68a830;
   --color2-primary: #a21212;
+  --color2-trans: rgba(162, 18, 18, 0.8);
   --color2-secondary: #da3330;
   --color2-tertiary: #ff4e41;
   --shade1: hsl(0, 0%, 50%);
@@ -38,7 +40,7 @@ html {
 body {
   background-color: var(--white);
   color: var(--black);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 1.5em;
   letter-spacing: 0.14em;
   font-size: 1.4em;
@@ -180,7 +182,7 @@ ul li {
 .header-container {
   display: block;
   position: fixed;
-  z-index: 3;
+  z-index: 10;
 
   /* display: none; */
 }
@@ -219,6 +221,7 @@ ul li {
   justify-content: left;
   align-items: center;
   font-size: clamp(3vw, 5vw, 6vw);
+  font-family: "Josefin Sans", "sans-serif";
   width: 65vw;
 }
 
@@ -263,11 +266,11 @@ ul li {
 /* HERO */
 
 .hero {
-  display: flex;
   height: clamp(50vh, 8rem, 80vh);
   margin-top: clamp(10vh, 8rem, 30vh);
-  /* max-height: 240px; */
-  align-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
   text-align: center;
   font-size: 2em;
@@ -279,34 +282,40 @@ ul li {
   background-repeat: no-repeat;
   box-shadow: 0px 5px 20px var(--shade2);
   border: 1px solid var(--shade1);
+  z-index: 1;
 }
 
-.hero > h1 {
+.hero > div > h1 {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 5vw;
-  height: 100%;
-  font-size: 3rem;
-  /* font-family: "Abril Fatface", cursive; */
-  color: var(--shade3);
+  font-size: 2rem;
+  color: var(--color2-primary);
+}
+
+.hero-btn {
+  color: var(--white);
+  background: var(--color2-trans);
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 3;
+  border: 1px solid var(--shade1);
+  width: 70%;
+  margin-top: 5vh;
 }
 
 .hero-text {
+  background: rgb(255, 255, 255, 50%);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 2rem;
-  z-index: 2;
-  color: var(--white);
+  z-index: 3;
+  color: var(--color1-primary);
   /* text-shadow: 0.2vw 0.3vw 2vw var(--shade1); */
-}
-
-.hero-overlay {
-  background-color: var(--color1-primary);
-  opacity: 0.5;
-  z-index: 1;
 }
 
 /* SECTION HEADER */
@@ -317,7 +326,7 @@ ul li {
   padding: 0.5em;
   background-color: var(--white);
   width: 100vw;
-  color: var(--color2);
+  color: var(--color2-primary);
 }
 
 /* ABOUT TOP */
@@ -339,7 +348,6 @@ ul li {
   align-items: center;
   padding: 3vh 6vh;
   width: 100%;
-  /* background-color: red; */
 }
 .btn-more a:hover {
   color: var(--shade1);
@@ -578,8 +586,31 @@ ul li {
 
 /* CONTACT */
 
+.contact-form {
+  margin-top: 2rem;
+}
+
+.contact-form > h1 {
+  font-size: 2rem;
+}
+
+.form-field {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.input-field {
+  font-size: 2rem;
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .contact-container-main {
-  padding: 0 0.5em 0.5em 0.5em;
   color: var(--shade3);
   font-size: 1.5em;
   font-weight: bold;
@@ -587,26 +618,21 @@ ul li {
   justify-content: center;
   align-items: center;
   text-align: right;
+  margin-top: 2rem;
 }
-
-.fa-phone {
+.contact-item-text,
+.send-btn {
+  border-radius: 2rem;
+  color: var(--white);
   font-size: 2em;
-  color: var(--color2);
+  background: var(--color1-primary);
+  padding: 3.5rem;
+  line-height: 3rem;
 }
 
-.contact-item-map {
-  padding: 20px;
-  justify-content: left;
-}
-
-.contact-item-text {
-  font-size: 1em;
-  padding: 20px;
-  justify-content: left;
-}
-
-.contact-icon {
-  height: 100px;
+.send-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 /* MEDIA QUERIES */

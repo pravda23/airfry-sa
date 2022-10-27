@@ -1,5 +1,7 @@
 #68a830 green
 #a21212 red-primary
+red-primary-trans rgba(162,18,18,.5)
 #da3330 red-secondary
 #ff4e41 red-tertiary
 #000000	black
+
