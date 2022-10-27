@@ -12,6 +12,7 @@
   --color2-secondary: #da3330;
   --color2-tertiary: #ff4e41;
   --shade1: hsl(0, 0%, 50%);
+  --shade2: hsl(0, 0%, 26%);
   --shade1-trans: hsl(0, 0%, 50%, 60%);
   --menu-speed: 0.5s;
   --h1-size: 1.8rem;
@@ -71,6 +72,12 @@ ul li {
   display: flex;
   align-items: center;
   padding: 1vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HAMBURGER BEGIN */
@@ -311,7 +318,6 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 2rem;
   z-index: 3;
   color: var(--color1-primary);
@@ -326,7 +332,7 @@ ul li {
   padding: 0.5em;
   background-color: var(--white);
   width: 100vw;
-  color: var(--color2-primary);
+  color: var(--shade2);
 }
 
 /* ABOUT TOP */
@@ -412,7 +418,7 @@ ul li {
   justify-content: center;
 }
 
-/* INFO  */
+/* ABOVE THE FOLD INFO  */
 
 .info-text {
   /* display: flex; */
@@ -430,140 +436,30 @@ ul li {
   font-weight: bold;
 }
 
-/* ABOUT BOTTOM */
+/* PRODUCT TABLE */
 
-.ab-container {
-  display: flex;
-}
-
-.ab-image {
-  display: flex;
-  align-items: center;
-  padding-right: 2vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.ab-text {
-  display: flex;
-  align-items: center;
+.product-table {
+  width: 100%;
   text-align: left;
-  font-size: 1em;
-  line-height: 1.6em;
-  color: var(--color3);
-  font-weight: bold;
+  padding: 1rem;
 }
 
-.card-container {
-  display: flex;
-  /* opacity: 0.8; */
-  justify-content: space-evenly;
-  line-height: 1.4em;
-  z-index: 3;
+th,
+td,
+tr {
+  padding: 1rem;
 }
 
-.card {
-  position: relative;
-  min-width: 320px;
-  height: 440px;
-  box-shadow: 5px 5px 15px var(--shade2);
-  border-radius: 15px;
-  margin: 30px;
-  transition: 0.5s;
-}
-
-.card:nth-child(1) .box .content a,
-.card:nth-child(2) .box .content a,
-.card:nth-child(3) .box .content a {
-  background: var(--white);
-}
-
-.card .box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  border-radius: 15px;
-  background-color: var(--shade3-trans);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.5s;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-.card:nth-child(1) {
-  background: url(images/airfryer-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card:nth-child(2) {
-  background: url(images/airfryer-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card:nth-child(3) {
-  background: url(images/spanner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card .box:hover {
-  transform: translateY(-10px);
-}
-
-.card .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-}
-
-.card .box .content {
-  padding: 4vw;
-  text-align: center;
-}
-
-.card .box .content h3 {
-  font-size: 2.2rem;
-  z-index: 1;
-  transition: 0.3s;
-  margin-bottom: 15px;
-  color: var(--color2-primary);
-}
-
-.card .box .content p {
-  font-size: 1.4rem;
-  font-weight: 600;
+th {
   color: var(--white);
-  z-index: 1;
-  transition: 0.3s;
+  background-color: var(--shade1);
 }
 
-.card .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 3vh 6vh;
-  background: black;
-  border-radius: 1vw;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--color3);
-  margin-top: 4vh;
-  transition: 0.3s;
-}
-
-.card .box .content a:hover {
-  /* box-shadow: 0 10px 20px var(--shade3); */
-  background: var(--white);
-  color: var(--shade3);
+.product-category {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--color2-trans);
+  color: var(--white);
 }
 
 /* FOOTER */
